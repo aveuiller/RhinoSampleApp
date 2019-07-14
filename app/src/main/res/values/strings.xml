@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rhino Sample App</string>
+    <string name="activity_title">Can we fetch the script engine using keyword:</string>
+</resources>

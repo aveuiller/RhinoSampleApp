@@ -14,10 +14,16 @@ $ ./gradlew installRelease
 
 The main activity will swith on the keywords from which you can access the Rhino script engine.
 
+# Configuration
+
+Going to the point, the important part of this project is the [proguard configuration](./app/proguard-rules.pro).
+
+We also currently [disable R8](./gradle.properties#L16) to force the use of _Proguard_.
+
 # Troubleshooting
 
 ## Beware of R8
 
-In this sample project, we had to disable the [R8 compilation tool](https://www.guardsquare.com/en/blog/proguard-and-r8) to make the Proguard configuration work and avoid shrinking too much classes.
+In this sample project, we had to disable the [R8 compilation tool](https://www.guardsquare.com/en/blog/proguard-and-r8) to make the _Proguard_ configuration work and avoid shrinking too much classes.
 
-The configuration disabling R8 can be found in the [gradle.properies](https://github.com/aveuiller/RhinoSampleApp/blob/master/gradle.properties#L16) file.
+The configuration disabling _R8_ can be found in the [gradle.properies](https://github.com/aveuiller/RhinoSampleApp/blob/master/gradle.properties#L16) file.

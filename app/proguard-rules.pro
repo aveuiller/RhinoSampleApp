@@ -1,4 +1,6 @@
--keep public class * extends android.app.Activity
+-keep class android.support.v7.widget.** { *; }
+
+-keep public class io.github.aveuiller.** { public *; }
 
 ## Rhino
 -keep class javax.script.** { *; }

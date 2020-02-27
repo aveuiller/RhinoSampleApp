@@ -2,9 +2,9 @@
 
 -keep public class io.github.aveuiller.** { public *; }
 
-## Rhino
+# Mozila Rhino
 -keep class javax.script.** { *; }
 -keep class com.sun.script.javascript.** { *; }
 -keep class org.mozilla.javascript.** { *; }
--dontwarn org.mozilla.javascript.**
--dontwarn sun.**
+
+-printconfiguration /tmp/rhinosampleapp-r8-config.txt
